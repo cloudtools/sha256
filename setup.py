@@ -1,6 +1,6 @@
-from distutils.core import setup
-from distutils.extension import Extension
-from distutils.command.sdist import sdist as _sdist
+from setuptools import setup
+from setuptools.extension import Extension
+from setuptools.command.sdist import sdist as _sdist
 
 cmdclass = {}
 
@@ -22,4 +22,5 @@ setup(
     license="MIT",
     cmdclass=cmdclass,
     ext_modules=[Extension("sha256", ["sha256.c"])],
+    test_suite="tests",
 )
