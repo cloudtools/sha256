@@ -5,7 +5,7 @@
 import codecs
 import struct
 
-from libc.stdint cimport uint32_t, uint8_t
+from libc.stdint cimport uint64_t, uint32_t, uint8_t
 
 __version__ = "0.1"
 
@@ -54,7 +54,7 @@ cdef class sha256:
     cdef uint32_t h[8]
     cdef bytes _buffer
     cdef bytes _temp
-    cdef uint32_t _counter
+    cdef uint64_t _counter
     cdef bint _locked
 
     def __init__(self, bytes m=None):
