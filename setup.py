@@ -15,7 +15,7 @@ cmdclass['sdist'] = sdist
 
 setup(
     name='sha256',
-    version='0.2',
+    version='0.3',
     description='sha256 library with midstate',
     author='Mark Peek',
     author_email='mark@peek.org',
