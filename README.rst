@@ -13,7 +13,8 @@ Cythonize
 This repository does not contain the generated C code from Cython. To
 recreate the C code run the cytnonize step via::
 
-    python setup.py sdist
+    python3 -m pip install --upgrade build
+    python3 -m build
 
 Authors
 =======
