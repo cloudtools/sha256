@@ -7,7 +7,7 @@ import struct
 
 from libc.stdint cimport uint64_t, uint32_t, uint8_t
 
-__version__ = "0.3"
+__version__ = "1.0"
 
 cdef uint32_t k[64]
 
