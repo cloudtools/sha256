@@ -11,10 +11,17 @@ relies on the native C compiler for optimization.
 Cythonize
 =========
 This repository does not contain the generated C code from Cython. To
-recreate the C code run the cytnonize step via::
+recreate the C code run the cythonize step via::
 
     python3 -m pip install --upgrade build
     python3 -m build
+
+Testing
+=======
+To run the unit test suite:
+
+    python3 -m pip install --upgrade nox
+    python3 -m nox
 
 Authors
 =======
